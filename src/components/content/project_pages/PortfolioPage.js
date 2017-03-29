@@ -1,7 +1,10 @@
 import React, {Component} from 'react'
 
+import GithubCorner from 'react-github-corner';
+
 const PortfolioPage = () => (
-  <div>
+  <div style={{position: "absolute"}}>
+    <GithubCorner href="https://github.com/CaelumF/portfolio" />
     <pre>
 {`
 I started this site out with standard HTML and CSS, but sorely missed React from when I used it at IBM during work experience.

@@ -4,7 +4,7 @@ import BalloonPageCSS from '../../../css/BalloonPage.css'
 import FloatingImage from '../../FloatingImage'
 import GithubCorner from 'react-github-corner';
 const BalloonPage = () => (
-  <div>
+  <div style={{position: "absolute"}}>
     <GithubCorner href="https://github.com/CaelumF/Balloon" />
       <pre>{`
 
