@@ -5,7 +5,7 @@
   max-height: 5rem;
   background-color: #0e2239;
   z-index: -700000;
-
+  margin-left: -2px;
 }
 .tabs {
   width: 80%;

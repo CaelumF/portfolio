@@ -12,7 +12,8 @@ export default StyleSheet.create({
         "height": 5,
         "maxHeight": 5,
         "backgroundColor": "#0e2239",
-        "zIndex": -700000
+        "zIndex": -700000,
+        "marginLeft": -2
     },
     "tabs": {
         "width": "80%",
