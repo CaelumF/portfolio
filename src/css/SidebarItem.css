@@ -1,0 +1,34 @@
+.SidebarListItem,
+.Highlighted{
+  width: 100%;
+  height: 4rem;
+
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: solid 5px #191919;
+  border-top-width: 2px;
+  border-left-style: none;
+  border-right-style: none;
+
+  background-color: #3f3f3f;
+  color: #340246;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s ease-out;
+}
+.SidebarListItem:hover{
+  border-color: #3f4499;
+  border-top-color: #3f3f3f;
+
+}
+.SidebarListItem p,
+.Highlighted p {
+  color: white;
+}
+
+.Highlighted{
+
+  border-color: #0088ff;
+  border-top-color: #40406f;
+  border-bottom-style: solid;
+}

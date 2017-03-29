@@ -1,0 +1,38 @@
+.Topbar {
+  width: 100%;
+  top:0px;
+  height: 5rem;
+  max-height: 5rem;
+  background-color: #0e2239;
+  z-index: -700000;
+
+}
+.tabs {
+  width: 80%;
+  text-align: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background-color: #002f55;
+  /*Centre tabs with content, accounting for sidebar*/
+  margin-left: 20.0%;
+  border-left: 2px solid #000000;
+  position: absolute;
+  max-height: 5rem;
+  z-index: 90000;
+}
+@media only screen and (max-width:800px ) {
+  .tabs{
+    overflow-y:auto;
+  }
+}
+.tabs div{
+  display: inline-block;
+  text-align: left;
+}
+
+.Topbar img{
+  left: 0px;
+  top:auto;
+  bottom: auto;
+  background-image: image("images/caelumF.png");
+}

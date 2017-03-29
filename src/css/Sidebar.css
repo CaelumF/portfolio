@@ -1,0 +1,75 @@
+.Sidebar{
+  width:20%;
+  height: 100%;
+  left: 0px;
+  top:5rem;
+  position:absolute;
+
+  border-color: #222259;
+  border-right-width: 3px;
+  border-right-style: groove;
+
+  background-color: #161622;
+  overflow: auto;
+  -webkit-perspective: 800px;
+          perspective: 800px;
+}
+.flippable{
+  width: 100%;
+  height: 0%;
+  background-color: red;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+.flippable figure {
+  margin: 0;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+@-webkit-keyframes flipper-thing {
+  0%{
+    -webkit-transform: rotateY( 0deg );
+            transform: rotateY( 0deg );
+  }
+  99%{
+    -webkit-transform: rotateY( 20deg );
+            transform: rotateY( 20deg );
+  }
+  100%{
+    -webkit-transform: rotateY( 0deg );
+            transform: rotateY( 0deg );
+  }
+
+}
+
+@keyframes flipper-thing {
+  0%{
+    -webkit-transform: rotateY( 0deg );
+            transform: rotateY( 0deg );
+  }
+  99%{
+    -webkit-transform: rotateY( 360deg );
+            transform: rotateY( 360deg );
+  }
+  100%{
+    -webkit-transform: rotateY( 0deg );
+            transform: rotateY( 0deg );
+  }
+}
+
+.Sidebar.flipped .flippable {
+  -webkit-animation-name: flipper-thing;
+          animation-name: flipper-thing;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+}

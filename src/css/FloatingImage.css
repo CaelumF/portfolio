@@ -1,0 +1,5 @@
+.floating-image-container:before{
+  content: '' ;
+  display:block;
+  float: right;
+}

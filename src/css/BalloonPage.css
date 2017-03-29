@@ -1,0 +1,12 @@
+.smolIMG{
+  width: 80%;
+  float: none;
+  height: auto;
+  display: block !important;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+}
+.spookText{
+  text-align: center;
+}
